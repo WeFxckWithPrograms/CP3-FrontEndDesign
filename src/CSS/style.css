@@ -156,5 +156,120 @@ body, html {
 .nav-links .active {
     color: #0074d9;
 }
+.contact-card {
+  background-color: #002b55;
+  border: 1px solid #007bff;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.carros-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.carro-card {
+    background-color: #06325d;
+    border: 1px solid #007bff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    max-width: 280px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.carro-card:hover {
+    transform: scale(1.03);
+}
+
+.carro-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 1rem 0;
+    object-fit: cover;
+}
+
+.nome-carro {
+    font-size: 1.2rem;
+    color: #1e90ff;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.preco-carro,
+.desc-carro {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #ccc;
+}
+
+.desc-carro {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-top: 0.4rem;
+}
+.btn-comprar {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.5rem;
+    background-color: #0074d9;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+}
+.sobre-home {
+    padding: 4rem 2rem;
+    background: linear-gradient(to bottom, #0b0f1a, #0d1320);
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.sobre-home h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #3399ff;
+}
+
+.sobre-home p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 1rem auto;
+    color: #cccccc;
+}
+
+.sobre-home .btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.6rem;
+    background-color: transparent;
+    border: 2px solid #3399ff;
+    color: #3399ff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.sobre-home .btn:hover {
+    background-color: #3399ff;
+    color: #fff;
+}
 

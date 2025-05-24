@@ -1,26 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carros</title>
+    <title>Veltrix - Contato</title>
     <link rel="stylesheet" href="../src/CSS/style.css">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
     <section id="fundo">
-        <header>
-            <h1 id="logo">Veltrix</h1>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./carros.html">Carros</a></li>
-                    <li><a href="./contato.html">Contato</a></li>
-                    <li><a href="./sobre.html">Sobre Nós</a></li>
-                </ul>
-            </nav>
-            <h2 id="slogan">Veltrix. Dirija o Futuro.</h2>
-        </header>
+      <header class="header">
+        <div class="container">
+          <h1 id="logo">Veltrix</h1>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./carros.html"class="active">Carros</a></li>
+              <li><a href="./contato.html">Contato</a></li>
+              <li><a href="./sobre.html">Sobre Nós</a></li>
+            </ul>
+          </nav>
+        </div>
+        <h2 id="slogan">Veltrix. Dirija o Futuro.</h2>
+      </header>
+
+      <main class="contact-container">
+        <div class="carros-imgs">
+            <div class="carro-card">
+                <h4 class="nome-carro">Vtx Thunderbolt</h4>
+                <img src="../src/assets/img/Vtx_esportivo.png" alt="Vtx Thunderbolt" />
+                <p class="preco-carro"><strong>Preço:</strong> R$ 950.000,00</p>
+                <p class="desc-carro">Supersportivo com motor V12, design agressivo e aceleração brutal de 0 a 100 km/h em 2,8s.</p>
+                <a href="#" class="btn-comprar">Comprar</a>
+            </div>
+            <div class="carro-card">
+                <h4 class="nome-carro">Vtx Vtx Stratus GT </h4>
+                <img src="../src/assets/img/Vtx_luxo.png" alt="Vtx Stratus GT">
+                <p class="preco-carro"><strong>Preço:</strong> R$ 420.000,00</p>
+                <p class="desc-carro">Sedã premium com tecnologia de ponta, conforto absoluto e performance de luxo.</p>
+                <a href="#" class="btn-comprar">Comprar</a>
+          </div>
+
+          <div class="carro-card">
+            <h4 class="nome-carro">Vtx Velocity R</h4>
+            <img src="../src/assets/img/Vtx_ostentação.png" alt="Vtx Velocity R">
+            <p class="preco-carro"><strong>Preço:</strong> R$ 670.000,00</p>
+            <p class="desc-carro">Cupê esportivo com dirigibilidade refinada, motor turbo e visual icônico.</p>
+            <a href="#" class="btn-comprar">Comprar</a>
+          </div>
+
+          <div class="carro-card">
+            <h4 class="nome-carro">Vtx Titan X</h4>
+            <img src="../src/assets/img/Vtx_Suv.png" alt="Vtx Titan X">
+            <p class="preco-carro"><strong>Preço:</strong> R$ 310.000,00</p>
+            <p class="desc-carro">SUV robusto com espaço para a família, tração inteligente e visual elegante.</p>
+            <a href="#" class="btn-comprar">Comprar</a>
+          </div>
+
+        </div>
+      </main>
     </section>
+
     <script src="../src/JS/script.js"></script>
-</body>
+  </body>
 </html>
