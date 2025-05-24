@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Veltrix - Home</title>
     <link rel="stylesheet" href="./src/CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <section id="fundo">
-        <header>
-            <h1 id="logo">Veltrix</h1>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./pages/carros.html">Carros</a></li>
-                    <li><a href="./pages/contato.html">Contato</a></li>
-                    <li><a href="./pages/sobre.html">Sobre Nós</a></li>
-                </ul>
-            </nav>
+        <header class="header">
+            <div class="container">
+                <h1 id="logo">Veltrix</h1>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./pages/carros.html">Carros</a></li>
+                        <li><a href="./pages/contato.html">Contato</a></li>
+                        <li><a href="./pages/sobre.html">Sobre Nós</a></li>
+                    </ul>
+                </nav>
+            </div>
             <h2 id="slogan">Veltrix. Dirija o Futuro.</h2>
         </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h3>Bem-vindo à Veltrix</h3>
+                <p>Experimente o luxo, desempenho e inovação dos nossos carros exclusivos.</p>
+                <a href="./pages/carros.html" class="btn">Explore Nossos Carros</a>
+            </div>
+        </section>
     </section>
     <script src="./src/JS/script.js"></script>
 </body>
