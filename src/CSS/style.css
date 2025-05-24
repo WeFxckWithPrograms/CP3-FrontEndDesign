@@ -151,6 +151,7 @@ body, html {
 
 .header {
     width: 100%;
+    box-shadow: 0 3px 4px rgba(196, 194, 194, 0.3);
 }
 
 .nav-links .active {
