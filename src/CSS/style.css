@@ -272,4 +272,118 @@ body, html {
     background-color: #3399ff;
     color: #fff;
 }
+.payment-container {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px; 
+    width: 100%;
+}
+
+.form-card {
+    background-color: #1a1a3a; 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px; 
+    text-align: center;
+}
+
+.form-card h2 {
+    color: #00bcd4; 
+    margin-bottom: 30px;
+    font-size: 2em; 
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff; 
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select { 
+    width: calc(100% - 20px); 
+    padding: 10px;
+    border: 1px solid #00bcd4; 
+    border-radius: 5px;
+    background-color: #0d0d21; 
+    color: #ffffff; 
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #ffcc00; 
+}
+
+
+.form-group.half-width {
+    display: inline-block;
+    width: calc(50% - 10px); 
+    margin-right: 20px;
+    vertical-align: top; 
+}
+.form-group.half-width:last-child {
+    margin-right: 0;
+}
+.form-actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.btn-submit, .btn-back { 
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit {
+    background-color: #00bcd4; 
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #0097a7;
+}
+
+.btn-back {
+    background-color: #555; 
+    color: white;
+}
+
+.btn-back:hover {
+    background-color: #777;
+}
+.payment-details {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px dashed #00bcd4;
+    border-radius: 8px;
+    background-color: #11112b;
+}
+
+.payment-details .form-group {
+    margin-bottom: 15px;
+}
 
