@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Inter:wght@400;600&display=swap');
 
+/* Estilos Base (para desktop e telas maiores) */
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +18,7 @@ body, html {
     background: linear-gradient(to right, rgba(0, 5, 10, 0.9), rgba(0, 0, 20, 0.8)), url('https://images.unsplash.com/photo-1618005198919-d3d4d39f7b84?auto=format&fit=crop&w=1470&q=80');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh; /* Usa min-height em vez de height para melhor adaptabilidade do conteúdo */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -31,12 +32,14 @@ body, html {
     padding: 1.5rem 3rem;
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(5px);
+    width: 100%; /* Garante que o cabeçalho ocupe toda a largura */
+    box-shadow: 0 3px 4px rgba(196, 194, 194, 0.3);
 }
 
 #logo {
     font-family: 'Poetsen One', sans-serif;
     font-size: 2.8rem;
-    color: #004080; 
+    color: #004080;
 }
 
 .nav-links {
@@ -59,7 +62,7 @@ body, html {
 
 #slogan {
     font-size: 1.2rem;
-    color: #336699; 
+    color: #336699;
     margin-left: 3rem;
     margin-bottom: 1rem;
 }
@@ -115,16 +118,17 @@ body, html {
 }
 
 .contact-card {
-    background-color: rgba(0, 20, 40, 0.7);
-    backdrop-filter: blur(8px);
-    padding: 2.5rem 3rem;
-    border-radius: 16px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: #002b55;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #ffffff;
-    max-width: 420px;
-    width: 100%;
-    text-align: left;
-    border: 1px solid #0074d9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adicionado novamente para consistência */
 }
 
 .contact-card h3 {
@@ -139,7 +143,6 @@ body, html {
     line-height: 1.5;
 }
 
-
 .container {
     width: 100%;
     max-width: 1200px;
@@ -147,26 +150,6 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header {
-    width: 100%;
-    box-shadow: 0 3px 4px rgba(196, 194, 194, 0.3);
-}
-
-.nav-links .active {
-    color: #0074d9;
-}
-.contact-card {
-  background-color: #002b55;
-  border: 1px solid #007bff;
-  border-radius: 10px;
-  padding: 2rem;
-  max-width: 900px;
-  margin: 2rem auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .carros-imgs {
@@ -220,6 +203,7 @@ body, html {
     color: #bbb;
     margin-top: 0.4rem;
 }
+
 .btn-comprar {
     display: inline-block;
     margin-top: 1rem;
@@ -236,6 +220,7 @@ body, html {
     background-color: #005fa3;
     transform: scale(1.05);
 }
+
 .sobre-home {
     padding: 4rem 2rem;
     background: linear-gradient(to bottom, #0b0f1a, #0d1320);
@@ -273,29 +258,31 @@ body, html {
     background-color: #3399ff;
     color: #fff;
 }
+
+/* Estilos do Formulário de Pagamento (unificado de form_styles.css) */
 .payment-container {
-    flex-grow: 1; 
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px; 
+    padding: 40px 20px;
     width: 100%;
 }
 
 .form-card {
-    background-color: #1a1a3a; 
+    background-color: #1a1a3a;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     width: 100%;
-    max-width: 600px; 
+    max-width: 600px;
     text-align: center;
 }
 
 .form-card h2 {
-    color: #00bcd4; 
+    color: #00bcd4;
     margin-bottom: 30px;
-    font-size: 2em; 
+    font-size: 2em;
 }
 
 .form-group {
@@ -307,21 +294,21 @@ body, html {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group input[type="tel"],
-.form-group select { 
-    width: calc(100% - 20px); 
+.form-group select {
+    width: calc(100% - 20px);
     padding: 10px;
-    border: 1px solid #00bcd4; 
+    border: 1px solid #00bcd4;
     border-radius: 5px;
-    background-color: #0d0d21; 
-    color: #ffffff; 
+    background-color: #0d0d21;
+    color: #ffffff;
     font-size: 16px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .form-group input[type="text"]:focus,
@@ -329,27 +316,28 @@ body, html {
 .form-group input[type="tel"]:focus,
 .form-group select:focus {
     outline: none;
-    border-color: #ffcc00; 
+    border-color: #ffcc00;
 }
-
 
 .form-group.half-width {
     display: inline-block;
-    width: calc(50% - 10px); 
+    width: calc(50% - 10px);
     margin-right: 20px;
-    vertical-align: top; 
+    vertical-align: top;
 }
+
 .form-group.half-width:last-child {
     margin-right: 0;
 }
+
 .form-actions {
     margin-top: 30px;
     display: flex;
-    justify-content: center; 
-    gap: 15px; 
+    justify-content: center;
+    gap: 15px;
 }
 
-.btn-submit, .btn-back { 
+.btn-submit, .btn-back {
     padding: 12px 25px;
     border: none;
     border-radius: 5px;
@@ -360,7 +348,7 @@ body, html {
 }
 
 .btn-submit {
-    background-color: #00bcd4; 
+    background-color: #00bcd4;
     color: white;
 }
 
@@ -369,13 +357,14 @@ body, html {
 }
 
 .btn-back {
-    background-color: #555; 
+    background-color: #555;
     color: white;
 }
 
 .btn-back:hover {
     background-color: #777;
 }
+
 .payment-details {
     margin-top: 20px;
     padding: 15px;
@@ -388,3 +377,198 @@ body, html {
     margin-bottom: 15px;
 }
 
+
+---
+
+### Media Queries
+
+/* Para Tablets (ex: telas de até 768px de largura) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    #logo {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        flex-wrap: wrap; /* Permite que os links de navegação quebrem a linha */
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    #slogan {
+        font-size: 1rem;
+        margin: 0;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .hero {
+        padding: 0 2rem;
+        text-align: center;
+        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    }
+
+    .hero-content {
+        max-width: 90%;
+    }
+
+    .hero-content h3 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .carros-imgs {
+        gap: 1.5rem;
+    }
+
+    .carro-card {
+        max-width: 320px; /* Cartões um pouco mais largos para tablets se estiverem em uma única coluna */
+    }
+
+    .contact-card {
+        padding: 2rem;
+        max-width: 90%;
+    }
+
+    .form-card {
+        padding: 30px;
+    }
+
+    .form-group.half-width {
+        width: 100%; /* Torna os campos de meia largura em largura total em tablets */
+        margin-right: 0;
+    }
+}
+
+/* Para Celulares (ex: telas de até 480px de largura) */
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem 1rem;
+    }
+
+    #logo {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Empilha os links de navegação verticalmente */
+        gap: 0.5rem;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        padding: 5px 0; /* Adiciona algum preenchimento para alvos de toque */
+    }
+
+    #slogan {
+        font-size: 0.9rem;
+        padding-top: 5px;
+    }
+
+    .hero {
+        padding: 0 1rem;
+    }
+
+    .hero-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .contact-container {
+        padding: 1rem;
+    }
+
+    .contact-card {
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+
+    .contact-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-card p {
+        font-size: 0.9rem;
+    }
+
+    .carros-imgs {
+        flex-direction: column; /* Empilha os cartões de carro verticalmente */
+        align-items: center; /* Centraliza os cartões empilhados */
+        gap: 1rem;
+    }
+
+    .carro-card {
+        max-width: 90%; /* Permite que os cartões ocupem mais largura em telas pequenas */
+        padding: 1rem;
+    }
+
+    .nome-carro {
+        font-size: 1.1rem;
+    }
+
+    .preco-carro,
+    .desc-carro {
+        font-size: 0.85rem;
+    }
+
+    .btn-comprar {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    .sobre-home {
+        padding: 2rem 1rem;
+    }
+
+    .sobre-home h2 {
+        font-size: 1.8rem;
+    }
+
+    .sobre-home p {
+        font-size: 0.9rem;
+    }
+
+    .form-card {
+        padding: 20px;
+    }
+
+    .form-card h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group select {
+        width: 100%; /* Garante que os inputs ocupem a largura total */
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .btn-submit, .btn-back {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
